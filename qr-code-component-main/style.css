@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Playwrite+IN:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap");
+
+/* || RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* || VARIABLES */
+
+:root {
+  /* FONTS */
+  --FF: "Outfit", sans-serif;
+  --FONT-SIZE: 17px;
+  --FONT-WEIGHT-BOLD: 700;
+  --FONT-WEIGHT-REG: 400;
+  --TITLE-FONT-SIZE: 1rem;
+
+  /* COLOURS */
+  --BGCOLOUR: #d6e2f0;
+  --CARD-BGCOLOUR: white;
+  --FONT-PRIMARY-COLOUR: #1f3251;
+  --FONT-SECONDARY-COLOUR: #68778d;
+
+  /* CARD */
+  --CARD-WIDTH: 320px;
+  --CARD-HEIGHT: 499px;
+  --CARD-PADDING: 16px;
+  --CARD-RADIUS: 20px;
+  --CARD-SHADOW: 0px 25px 25px rgba(0, 0, 0, 0.05);
+  --GAP-LG: 24px;
+  --GAP-M: 16px;
+
+  /* TEXT */
+  --TEXT-FONT-SIZE: 1rem;
+  --TEXT-LINE-H: 140%;
+  --TEXT-LETTER-SPACING: 0.2px;
+  --TEXT-PADDING: 10px;
+}
+
+/* || GENERAL STYLES */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--BGCOLOUR);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /*   gap: var(--GAP-M); */
+  width: var(--CARD-WIDTH);
+  height: var(--CARD-HEIGHT);
+  background-color: var(--CARD-BGCOLOUR);
+  border-radius: var(--CARD-RADIUS);
+  box-shadow: var(--CARD-SHADOW);
+}
+
+img {
+  width: 100%;
+  height: auto;
+  padding: var(--CARD-PADDING);
+  border-radius: var(--CARD-RADIUS);
+}
+
+.card_heading {
+  font-family: var(--FF);
+  font-weight: var(--FONT-WEIGHT-BOLD);
+  padding: var(--TEXT-PADDING);
+  letter-spacing: var(--TEXT-LETTER-SPACING);
+  line-height: var(--TEXT-LINE-H);
+  color: var(--FONT-PRIMARY-COLOUR);
+  font-size: var(--TITLE-FONT-SIZE);
+  text-align: center;
+}
+
+.card_text {
+  font-family: var(--FF);
+  color: var(--FONT-SECONDARY-COLOUR);
+  font-size: var(--FONT-SIZE);
+  font-weight: var(--FONT-WEIGHT-REG);
+  padding: var(--TEXT-PADDING);
+  letter-spacing: var(--TEXT-LETTER-SPACING);
+  line-height: var(--TEXT-LINE-H);
+  text-align: center;
+}
