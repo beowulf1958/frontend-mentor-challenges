@@ -7,6 +7,10 @@
   font-family: "Figtree", sans-serif;
 }
 
+:root {
+  --MARGIN-LEFT: 18px;
+}
+
 body {
   background: rgb(244, 208, 78);
   padding: 100px;
@@ -21,6 +25,9 @@ img {
 .container {
   background: white;
   border-radius: 0.5rem;
+  max-width: 21rem;
+  height: auto;
+  border: 0.5px solid black;
 }
 
 button {
@@ -29,15 +36,35 @@ button {
   border-radius: 5px;
   padding: 5px 10px;
   border: none;
+  display: flex;
+  max-width: fit-content;
+  margin-left: var(--MARGIN-LEFT);
+  margin-bottom: 15px;
+}
+
+.date {
+  margin-left: var(--MARGIN-LEFT);
+  margin-bottom: 10px;
+  font-size: 14px;
 }
 
 h2 {
   font-weight: 800;
+  margin-left: var(--MARGIN-LEFT);
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 h2:hover {
   cursor: pointer;
   color: hsl(47, 88%, 63%);
+}
+
+.text {
+  font-size: 16px;
+  margin-left: var(--MARGIN-LEFT);
+  margin-right: 20px;
+  font-weight: 500;
 }
 
 .date,
